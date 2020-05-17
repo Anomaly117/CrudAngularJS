@@ -1,0 +1,81 @@
+﻿<h2>Actualizar</h2>
+<form class="form-horizontal" ng-submit="updateUser(user)">
+    <h4>Actualizar usuario seleccionado</h4>
+    <hr />
+
+    <!--********************************************************************-->
+
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Nombres:</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" ng-model="user.Nombres" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Apellidos:</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" ng-model="user.Apellidos" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Identificación:</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" ng-model="user.Identificacion" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Fecha Nacimiento:</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" ng-model="user.Fecha_nacimiento" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Lugar de nacimiento:</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" ng-model="user.Lugar_nacimiento" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Fecha de expedición:</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" ng-model="user.Fecha_expedicion" />
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Rh:</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" ng-model="user.Rh" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Grupo sanguineo:</label>
+        <div class="col-lg-10">
+            <input type="text" class="form-control" ng-model="user.Grupo_sanguineo" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">Es requerido:</label>
+        <div class="col-lg-10">
+            <select id="inputState" class="form-control" ng-model="user.requerido">
+                <option selected disabled value>¿Es requerido?</option>
+                <option ng-value="true">Requerido</option>
+                <option ng-value="false">No requerido</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <input type="submit" class="btn btn-success" value="Actualizar" />
+            <a href="#/" class="btn btn-default">Cancel</a>
+        </div>
+    </div>
+</form>
